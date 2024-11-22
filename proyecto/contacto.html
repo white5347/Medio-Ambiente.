@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Contenedor para el título y el botón -->
+        <div class="header">
+            <!-- Título centrado -->
+            <h1>Contacto</h1>
+            <!-- Botón alineado a la izquierda -->
+            <div class="button-container">
+                <button class="top-left-btn" id="topLeftButton">Inicio</button>
+            </div>
+        </div>
+
+        <p>Por favor, rellena el formulario para ponerte en contacto con nosotros.</p>
+
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tu mensaje..." required></textarea>
+            </div>
+
+            <button type="submit" id="submitButton">Enviar Mensaje</button>
+            <button type="button" id="resetButton">Resetear Formulario</button>
+        </form>
+
+        <div id="responseMessage" class="response-message"></div>
+    </div>
+
+    <script src="contacto.js"></script>
+</body>
+</html>

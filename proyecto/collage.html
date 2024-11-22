@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage de Imágenes</title>
+    <link rel="stylesheet" href="collage.css">
+</head>
+<body>
+
+    <!-- Botón de Inicio en la parte superior izquierda -->
+    <a href="index.html" class="boton-inicio">Inicio</a>
+
+    <div class="collage-container">
+        <div class="collage-item top">
+            <img src="descarga.jpg" alt="" class="collage-img">
+        </div>
+        <div class="collage-item bottom">
+            <img src="arbolitos-3.jpg" alt="" class="collage-img">
+        </div>
+        <div class="collage-item top">
+            <img src="descarga (2).jpg" alt="" class="collage-img">
+        </div>
+        <div class="collage-item bottom">
+            <img src="conservacion-del-agua-registro-y-estrategias-para-un-uso-sostenible-768x1341.jpg" alt="" class="collage-img">
+        </div>
+        <div class="collage-item top">
+            <img src="descarga (1).jpg" alt="" class="collage-img">
+        </div>
+        <div class="collage-item bottom">
+            <img src="images.jpg" alt="" class="collage-img">
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span id="close" class="close">&times;</span>
+        <div class="modal-content-wrapper">
+            <img id="modal-img" class="modal-content" src="" alt="Imagen Agrandada">
+            <div class="modal-caption">
+                <textarea id="modal-text" placeholder="Escribe algo sobre esta imagen..." rows="4"></textarea>
+            </div>
+            <button id="send-button" class="send-button">Enviar</button>
+        </div>
+        <div id="caption"></div>
+    </div>
+
+    <script src="collage.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+/* Estilos para la imagen de fondo */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen cubra todo el contenedor */
+    filter: blur(8px); /* Aplica el desenfoque */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Superpone un fondo oscuro transparente */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.content h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+/* Estilos para el contenedor de la información */
+.info-container {
+    width: 70%; /* No se extiende por toda la página */
+    margin: 30px auto; /* Centrado y con márgenes arriba y abajo */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro para el texto */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.info-container p {
+    margin-bottom: 15px;
+}
+
+/* Para negrita en ciertos párrafos */
+.info-container strong {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilos del header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    z-index: 100;
+    padding: 10px 0;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.icon-globe {
+    font-size: 40px;
+    display: inline-block;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+.icon-menu {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.submenu-container {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    top: 40px;
+    left: 0;
+    width: 200px;
+}
+
+.submenu-container:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    display: block;
+    color: white;
+    padding: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+/* Estilo para el contenedor de imágenes */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea las imágenes hacia la derecha */
+    margin-left: 20px; /* Espacio entre el contenido y las imágenes */
+    padding: 20px;
+}
+
+.image-gallery img {
+    width: 100%; /* Ajusta el tamaño de las imágenes */
+    max-width: 250px; /* Máximo ancho de las imágenes */
+    margin-bottom: 10px; /* Espacio entre las imágenes */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+/* Diseño para las imágenes al lado derecho del texto */
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.texto-info {
+    width: 60%;
+}
+
+.imagenes-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.imagenes-info img {
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}

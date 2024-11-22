@@ -1,0 +1,105 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;  /* Fondo verde */
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;  /* Fondo blanco para el formulario */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #388E3C; /* Título en verde más oscuro */
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    color: #388E3C; /* Etiquetas de campos en verde oscuro */
+}
+
+.campo input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button.boton {
+    width: 100%;
+    padding: 10px;
+    background-color: #388E3C; /* Verde oscuro para los botones */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.boton:hover {
+    background-color: #2C6B34; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Estilos para el enlace de restablecer contraseña */
+#restablecer-enlace {
+    color: #388E3C; /* Verde para el enlace */
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#restablecer-enlace:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del formulario para restablecer la contraseña */
+#restablecer-contenido {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#volver-enlace {
+    display: block;
+    color: #388E3C; /* Enlace para volver al inicio en verde oscuro */
+    text-align: center;
+    margin-top: 15px;
+}
+
+#volver-enlace:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del botón de inicio */
+.boton-inicio {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #388E3C; /* Verde oscuro */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.boton-inicio:hover {
+    background-color: #2C6B34; /* Verde más oscuro al pasar el ratón */
+}
